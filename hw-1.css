@@ -11,6 +11,11 @@ div {
   font-family: "Montserrat";
 }
 
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
 .top {
   width: 1440px;
   height: 1024px;
@@ -53,6 +58,10 @@ div {
   font-weight: 400;
   line-height: normal;
 }
+.top-button:hover {
+  background: #FFF;
+  color: #9C0332;
+}
 
 .games {
   width: 1440px;
@@ -71,4 +80,8 @@ div {
   height: 300px;
   flex-shrink: 0;
   border-radius: 16px;
+  transition: 0.3s;
+}
+.games__item:hover {
+  box-shadow: 0 0 12px #65a2f1;
 }/*# sourceMappingURL=hw-1.css.map */

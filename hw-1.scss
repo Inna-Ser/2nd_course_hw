@@ -11,6 +11,11 @@ div {
     font-family: "Montserrat";
 }
 
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
 .top {
     width: 1440px;
     height: 1024px;
@@ -54,6 +59,11 @@ div {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+
+        &:hover {
+            background: #FFF;
+            color: #9C0332;
+        }
     }
 }
 
@@ -74,5 +84,10 @@ div {
         height: 300px;
         flex-shrink: 0;
         border-radius: 16px;
+        transition: .3s;
+
+        &:hover {
+            box-shadow: 0 0 12px #65a2f1;
+        }
     }
 }
