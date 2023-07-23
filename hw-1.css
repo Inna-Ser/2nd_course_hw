@@ -7,8 +7,12 @@ div {
   display: block;
 }
 
-.body {
-  font-family: "Montserrat";
+input, button {
+  font-family: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 .center {
@@ -28,6 +32,7 @@ div {
   padding-left: 120px;
 }
 .top-title {
+  width: 660px;
   color: #FFF;
   font-family: Montserrat;
   font-size: 64px;
@@ -36,6 +41,7 @@ div {
   line-height: normal;
 }
 .top-text {
+  width: 540px;
   color: #FFF;
   font-family: Montserrat;
   font-size: 18px;
@@ -44,6 +50,10 @@ div {
   line-height: 32px;
   margin-top: 32px;
   margin-bottom: 44px;
+}
+.top .test {
+  font-family: Montserrat;
+  color: #FFF;
 }
 .top-button {
   width: 234.063px;
