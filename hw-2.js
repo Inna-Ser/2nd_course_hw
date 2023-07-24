@@ -28,8 +28,8 @@ numb += 5;
 numb -= 3;
 numb *= 7;
 numb /= 3;
-numb = numb++;
-numb = numb--;
+numb++;
+numb--;
 alert(numb);
 // task 8
 let age = prompt('Сколько Вам лет?');
@@ -43,13 +43,12 @@ const user = {
 // 9.1
 user.cityOfResidense = true;
 // 9.2
-age = 40;
+user.age = 40;
 // 9.3
 delete user.cityOfResidense;
-// 9.4
-let info = prompt('Вы работаете администратором?');
-age = Boolean(info);
-alert(age);
+// 9.4 
+let info = prompt('Какую информацию хотите узнать о пользователе?');
+alert(Boolean(info));
 // task 10
 let userName = prompt('Как Ваше имя?');
 alert(`Привет, ${userName}!`);
