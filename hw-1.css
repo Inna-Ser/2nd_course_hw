@@ -7,7 +7,8 @@ div {
   display: block;
 }
 
-input, button {
+input,
+button {
   font-family: inherit;
 }
 
@@ -89,9 +90,50 @@ body {
   width: 378px;
   height: 300px;
   flex-shrink: 0;
+  box-sizing: border-box;
   border-radius: 16px;
   transition: 0.3s;
 }
 .games__item:hover {
   box-shadow: 0 0 12px #65a2f1;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    width: 375px;
+    height: 735px;
+    background-position: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+  }
+  .top-title {
+    width: 343px;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .top-text {
+    width: 343px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .games {
+    width: 375px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .games__item {
+    width: 343px;
+  }
 }/*# sourceMappingURL=hw-1.css.map */

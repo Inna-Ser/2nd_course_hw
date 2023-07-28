@@ -1,4 +1,4 @@
-// task 1
+/*// task 1
 let a = 10;
 alert(a);
 // task 2
@@ -48,7 +48,7 @@ user.age = 40;
 delete user.cityOfResidense;
 // 9.4 
 let info = prompt('Какую информацию хотите узнать о пользователе?');
-alert(Boolean(info));
+alert(user[info]);
 // task 10
 let userName = prompt('Как Ваше имя?');
-alert(`Привет, ${userName}!`);
+alert(`Привет, ${userName}!`);*/
