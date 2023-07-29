@@ -22,7 +22,6 @@ body {
 }
 
 .top {
-  width: 1440px;
   height: 1024px;
   box-sizing: border-box;
   background-image: url(img/Rectangle\ 1.jpg);
@@ -75,12 +74,12 @@ body {
 }
 
 .games {
-  width: 1440px;
   box-sizing: border-box;
   background: #000915;
   display: flex;
-  gap: 32px;
   flex-wrap: wrap;
+  gap: 32px;
+  justify-content: space-between;
   padding-top: 128px;
   padding-bottom: 128px;
   padding-left: 120px;
@@ -104,7 +103,6 @@ body {
     padding-right: 16px;
   }
   .top {
-    width: 375px;
     height: 735px;
     background-position: 31%;
     display: flex;
@@ -127,7 +125,6 @@ body {
     margin-bottom: 0;
   }
   .games {
-    width: 375px;
     display: flex;
     align-items: center;
     padding-left: 16px;
