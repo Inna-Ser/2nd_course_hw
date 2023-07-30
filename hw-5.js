@@ -16,7 +16,7 @@ const obj = {
     Вася: '300',
     Петя: '400'
 };
-for (key in obj) {
+for (let key in obj) {
     alert(`${key} - зарплата ${obj[key]}`)
 }
 // task 5
