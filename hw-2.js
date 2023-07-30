@@ -1,4 +1,4 @@
-/*// task 1
+// task 1
 let a = 10;
 alert(a);
 // task 2
@@ -41,7 +41,7 @@ const user = {
     isAdmin: true,
 }
 // 9.1
-user.cityOfResidense = true;
+user['cityOfResidense'] = true;
 // 9.2
 user.age = 40;
 // 9.3
@@ -51,4 +51,4 @@ let info = prompt('Какую информацию хотите узнать о 
 alert(user[info]);
 // task 10
 let userName = prompt('Как Ваше имя?');
-alert(`Привет, ${userName}!`);*/
+alert(`Привет, ${userName}!`);
