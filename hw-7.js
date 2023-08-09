@@ -20,11 +20,13 @@ const arrNumb = [1, 3, 5, 10, 20];
 alert(arrNumb.join(' '));
 
 // task 4
-const arrays = [
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1]
-]
+const arrays = [];
+for (let i = 0; i < 3; i++) {
+    arrays[i] = [];
+    for (let b = 0; b < 3; b++) {
+        arrays[i].push(1);
+    }
+}
 
 alert(arrays);
 
@@ -63,11 +65,13 @@ const arraysN = [
 alert([arraysN]);
 
 // task 10
-let sum = 0;
 const arrayNum = [3, 8, 2, 1, 6];
 for (let i = 0; i < arrayNum.length; i++) {
-    sum += arrayNum[i];
-    alert(sum);  // не могу здесь добиться, чтобы выводило только суммы, без первого числа. т.е. впервый раз к 0 прибавляется 3
+    if (arrayNum[i + 1 ] === undefined) {
+        break;
+    } else {
+        alert(arrayNum[i] + arrayNum[i + 1]);
+    }
 }
 
 // task 11
@@ -105,7 +109,7 @@ let min = 0;
 let max = 10;
 for (let i = 0; i < count; i++) {
     arrRandom.push(Math.round(Math.random() * (max - min) + min));
-    if(arrRandom[i] % 2 === 0) {
+    if (arrRandom[i] % 2 === 0) {
         arrInteger.push(arrRandom[i])
     }
 }
