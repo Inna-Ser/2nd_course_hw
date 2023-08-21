@@ -13,3 +13,20 @@ function howMonth() {
     } else
         return alert('Введите значение от 1 до 12')
 };
+
+function guestWorld() {
+    let arrWorlds = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    arrWorlds = arrWorlds.sort(() => Math.random() - 0.5);
+    alert(arrWorlds);
+    let ans1 = prompt('Чему равнялся первый элемент массива?');
+    let ans2 = prompt('Чему равнялся последний элемент массива?');
+    arrWorlds.forEach(() => {
+        if (ans1.toLowerCase() == arrWorlds[0].toLowerCase() && ans2.toLowerCase() == arrWorlds[arrWorlds.length - 1].toLowerCase()) {
+            alert('Поздравляем! Вы угадали!')
+        } else if (ans1.toLowerCase() == arrWorlds[0].toLowerCase() || ans2.toLowerCase() == arrWorlds[arrWorlds.length - 1].toLowerCase()) {
+            alert('Вы были близки к победе!')
+        } else {
+            alert('Вы не угадали, попробуйте еще раз!')
+        }
+    });
+}
