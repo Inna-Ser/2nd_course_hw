@@ -41,14 +41,14 @@ const user = {
     isAdmin: true,
 }
 // 9.1
-user.cityOfResidense = true;
+user['cityOfResidense'] = true;
 // 9.2
 user.age = 40;
 // 9.3
 delete user.cityOfResidense;
 // 9.4 
 let info = prompt('Какую информацию хотите узнать о пользователе?');
-alert(Boolean(info));
+alert(user[info]);
 // task 10
 let userName = prompt('Как Ваше имя?');
 alert(`Привет, ${userName}!`);
